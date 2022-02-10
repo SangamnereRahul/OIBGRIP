@@ -1,1 +1,173 @@
+<!--doctype html-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <!--using FontAwesome---------------->
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
+<link rel="stylesheet" href="stayle.css">
+<title>Portfolio Website</title>
+	
+</head>
+<body>
+    <section id="main">
+        <!--navigation-->
+        <nav>
+        <a href="#" class="logo">Rahul</a>
+        <!--menu--------->
+        <div class="toggle"></div>
+        <ul class="menu">
+        <li class="active"><a href="#main" >Home</a></li>	
+        <li><a href="#about">About</a></li>	
+        <li><a href="#services">Services</a></li>	
+        <li><a href="#portfolio">Portfolio</a></li>		
+        <li><a href="#contact-form">Contact</a></li>	
+        </ul>
+        <a href="#" class="lang">En</a>
+        </nav>
+
+        <div class="name">
+        <p>Hello</p>
+        <h1>I'm Rahul Sangamnere</h1>
+        <p class="details">hello I am Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.</p>
+        <a href="#" class="cv-btn">Download CV</a>
+        
+            
+        </div>
+        <!--social---------------->
+        <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>	
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>	
+        </div>
+     </section>
+
+        <!--about----------------------->
+            <section id="about">
+        <div class="about-text">
+        <h1>About Us</h1>
+        <h2>FreeLancing FrontEnd Developer</h2>
+        <p>I Student in Software Engineering with experience and extensive education in programming languages
+            and web designing. A fast learner with multi-tasking skills and leadership qualities. Strong work ethic in
+            the team or individual settings to drive product success and process efficiency.
+            </p>
+        <button>View More Details</button>
+        </div>
+        
+      </section>
+    
+      <!--services-------------------->
+	<section id="services">
+	<div class="s-heading">
+	<h1>Skills</h1>
+	<p>Here Is The Some Servies Which We Provide You.</p>
+	</div>
+	<div class="b-container">
+	<div class="s-box">
+	<div class="s-b-img">
+		<div class="s-type">Front-End</div>
+		<img src="images/s1.png">
+	</div>
+	<div class="s-b-text">
+	<a href="#">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</a>	
+	</div>
+	</div>
+	<div class="s-box">
+	<div class="s-b-img">
+		<div class="s-type">Back-End</div>
+		<img src="images/s2.png">
+	</div>
+	<div class="s-b-text">
+	<a href="#">A backend developer is one who makes use of the technology required to develop the products for the backend of any website.</a>	
+	</div>
+	</div>
+	<div class="s-box">
+	<div class="s-b-img">
+		<div class="s-type">Programming</div>
+		<img src="images/s3.jpg">
+	</div>
+	<div class="s-b-text">
+	<a href="#">I love to do Programming. I do mostly programming in C++ and little bit in Java and Python </a>	
+	</div>
+	</div>
+	</div>
+	</section>
+  
+    <section id="portfolio">
+	<h1 class="p-headind">Portfolio</h1>
+	<div class="p-container">
+	<div class="p-box">
+	<div class="overlay-text">
+	<h1>Image Gallary</h1>
+	<p>Client Project</p>	
+	</div>
+	<img src="images/w1.jpg">	
+	</div>
+	<div class="p-box">
+	<div class="overlay-text">
+	<h1>Temperature Convertor</h1>
+	<p>Client Project</p>	
+	</div>
+	<img src="images/w2.jpg">
+	</div>
+	<div class="p-box">
+
+	<div class="overlay-text">
+	<h1>ToDo List</h1>
+	<p>Client Project</p>	
+	</div>
+    	<img src="images/w3.jpg">
+	</div>
+		
+	</div>
+	</section>
+
+	<section id="contact-btn">
+    	<h1 class="c-b-heading">If You Have Any Project In Your Mind ?</h1>
+		<button >Contact Me</button>
+	</section>
+  
+    <!--contact-form------------------->
+	<section id="contact-form">
+	    <form>
+	        <div class="contact-left">
+	            <h1 class="c-l-heading">Write us</h1>
+	            <div class="f-name">
+	                <h2 >Name</h2>
+	                <input type="text" placeholder="Full Name"/>
+	            </div>
+	            <div class="f-email">
+	                <h2>Email</h2>
+	                <input type="email" placeholder="Example@gmail.com"/>
+	            </div>
+	        </div>
+	        <div class="contact-right">
+	            <div class="message">
+	                <h2>Message</h2>
+	                <textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+	            </div>
+	            <button>submit</button>
+	        </div>
+		
+	    </form>
+	</section>
+  
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+    
+        $('nav ul').toggleClass('active-menu')
+     })
+    });
+
+</script>
+  
+</body>
+</html>
